@@ -1,7 +1,7 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
+  "name": "@ckeditor/ckeditor5-build-classic-base64upload",
   "version": "12.4.0",
-  "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor with Base64UploadAdapter.",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
@@ -45,6 +45,7 @@
     "@ckeditor/ckeditor5-paste-from-office": "^11.1.0",
     "@ckeditor/ckeditor5-table": "^14.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^14.2.0",
+    "@ckeditor/ckeditor5-upload": "^12.0.0",
     "eslint": "^5.5.0",
     "eslint-config-ckeditor5": "^2.0.0",
     "husky": "^1.3.1",
