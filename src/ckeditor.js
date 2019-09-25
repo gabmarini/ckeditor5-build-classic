@@ -27,7 +27,17 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+
+/* Aggiunte*/
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
+import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+
+// import Placeholder from '../plugin/placeholder';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -54,7 +64,16 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	Base64UploadAdapter
+
+	/* Aggiunte*/
+	Alignment,
+	FontSize,
+	FontFamily,
+	Highlight,
+	Strikethrough,
+	Underline,
+	Base64UploadAdapter,
+	// Placeholder
 ];
 
 // Editor configuration.
@@ -71,9 +90,17 @@ ClassicEditor.defaultConfig = {
 			'imageUpload',
 			'blockQuote',
 			'insertTable',
-			'mediaEmbed',
 			'undo',
-			'redo'
+			'redo',
+
+			/* Aggiunte*/
+			'fontsize',
+			'fontfamily',
+			'underline',
+			'strikethrough',
+			'highlight',
+			'alignment',
+			// 'selectPlaceholder'
 		]
 	},
 	image: {
