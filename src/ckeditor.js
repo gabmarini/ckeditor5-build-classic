@@ -36,8 +36,7 @@ import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
-
-// import Placeholder from '../plugin/placeholder';
+import SelectPlaceholder from '../plugin/select-placeholder';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -73,7 +72,7 @@ ClassicEditor.builtinPlugins = [
 	Strikethrough,
 	Underline,
 	Base64UploadAdapter,
-	// Placeholder
+	SelectPlaceholder
 ];
 
 // Editor configuration.
@@ -100,7 +99,7 @@ ClassicEditor.defaultConfig = {
 			'strikethrough',
 			'highlight',
 			'alignment',
-			// 'selectPlaceholder'
+			'selectPlaceholder'
 		]
 	},
 	image: {
