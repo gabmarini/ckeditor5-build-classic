@@ -1,6 +1,6 @@
 {
 	"name": "@gabmarini/ckeditor5-build-classic-base64upload",
-	"version": "12.4.0-rc0.6",
+	"version": "12.4.0-rc0.6.1",
 	"description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor with Base64UploadAdapter.",
 	"keywords": [
 		"ckeditor5-build",

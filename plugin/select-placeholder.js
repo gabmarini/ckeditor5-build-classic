@@ -26,7 +26,8 @@ class SelectPlaceholder extends Plugin {
 						model: new Model( {
 							withText: true,
 							label: x.label,
-							value: x.value
+							value: x.value,
+							tooltip: x.tooltip
 						} )
 					};
 					items.add( item );
@@ -36,6 +37,8 @@ class SelectPlaceholder extends Plugin {
 			addListToDropdown( dropdownView, items );
 
 			const listView = dropdownView.listView;
+			
+			listView.set ({tooltip: true});
 
 			listView.on( 'execute', event => {
 				const content = event.source.value;
