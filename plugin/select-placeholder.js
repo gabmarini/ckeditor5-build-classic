@@ -37,8 +37,8 @@ class SelectPlaceholder extends Plugin {
 			addListToDropdown( dropdownView, items );
 
 			const listView = dropdownView.listView;
-			
-			listView.set ({tooltip: true});
+
+			listView.set( { tooltip: true } );
 
 			listView.on( 'execute', event => {
 				const content = event.source.value;
